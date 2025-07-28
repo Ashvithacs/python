@@ -1,0 +1,15 @@
+#readymade implementation of minmun heap
+import heapq
+elements = [20, 30, 40, 1, 3, 6, 2, 5, 36]  
+# min_heap = []  
+max_heap = []  
+# for i in elements:
+#     heapq.heappush(min_heap, i)
+# print(min_heap)  
+# a = heapq.heappop(min_heap)
+# print(a) 
+for i in elements:
+    heapq.heappush(max_heap, -i)
+res = [-i for i in max_heap]
+print(res)
+print(heapq.heappop(res), end=" ")
